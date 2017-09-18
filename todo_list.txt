@@ -1,0 +1,12 @@
+particle_filter.cpp
+  ParticleFilter::init
+    * Set number of particles
+	* Initialize all particles using x, y, theta and uncertainties
+	* Initialize all weights to 1
+  ParticleFilter::prediction
+    * Add measurements to each particle with added gauss noise
+  ParticleFilter::dataAssociation
+    * Find the predicted measurement that is closest to each observed measurement
+	* Assign each observed measurement to the closest predicted measurement.
+  ParticleFilter::resample
+    * Resample particles with replacement with probability equal to their weights
