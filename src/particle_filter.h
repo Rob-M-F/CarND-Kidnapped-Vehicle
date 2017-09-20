@@ -27,16 +27,12 @@ struct Particle {
 
 class ParticleFilter {
 	
-	// Number of particles to draw
-	int num_particles; 
 	
+	int num_particles; // Number of particles to draw
 	
+	bool is_initialized; // Flag, if filter is initialized
 	
-	// Flag, if filter is initialized
-	bool is_initialized;
-	
-	// Vector of weights of all particles
-	std::vector<double> weights;
+	std::vector<double> weights; // Vector of weights of all particles
 	
 public:
 	
